@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Include Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="reflection.html">Reflection</a>
+    <a href="Project.html">Projects</a>
+    <a href="Data Visualization.html">Data Visualization</a>
+</nav>
+
+<div class="container">
+    <h1>Data Visualization</h1>
+    
+    <p>Here is a visualization of my project from a statistics class where I analyzed students’ study hours and exam scores.</p>
+
+    <div class="highlight">
+        <h2>Visualization Description</h2>
+        <p>The chart below shows the relationship between the <strong>number of hours studied per week</strong> and <strong>exam scores</strong> for 10 students.</p>
+        <p>The goal was to see whether more study hours correlate with higher exam performance.</p>
+    </div>
+
+    <!-- Canvas for Chart.js -->
+    <canvas id="studyChart" width="600" height="400"></canvas>
+
+    <div class="highlight">
+        <h2>Story Behind the Visualization</h2>
+        <p>This dataset was collected during my university statistics course. I chose a <strong>scatter plot</strong> because it clearly shows correlations between two numerical variables.</p>
+        <p>The points allow viewers to quickly identify trends: in this case, we can see that students who studied more hours generally scored higher.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 My Website
+</footer>
+
+<script>
+    // Data for the chart
+    const data = {
+        labels: ['Student 1','Student 2','Student 3','Student 4','Student 5','Student 6','Student 7','Student 8','Student 9','Student 10'],
+        datasets: [{
+            label: 'Exam Score vs Study Hours',
+            data: [
+                {x: 2, y: 55},
+                {x: 5, y: 70},
+                {x: 3, y: 60},
+                {x: 8, y: 90},
+                {x: 6, y: 75},
+                {x: 4, y: 65},
+                {x: 7, y: 85},
+                {x: 1, y: 50},
+                {x: 9, y: 95},
+                {x: 3.5, y: 68}
+            ],
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1,
+            pointRadius: 6
+        }]
+    };
+
+    const config = {
+        type: 'scatter',
+        data: data,
+        options: {
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Hours Studied per Week'
+                    },
+                    min: 0,
+                    max: 10
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Exam Score (%)'
+                    },
+                    min: 0,
+                    max: 100
+                }
+            }
+        }
+    };
+
+    // Render the chart
+    const studyChart = new Chart(
+        document.getElementById('studyChart'),
+        config
+    );
+</script>
+
+</body>
+</html>
+
+

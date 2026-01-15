@@ -1,0 +1,77 @@
+my_website/
+│
+├── index.html        (Home Page)
+├── about.html        (About / Reflection Page)
+├── projects.html     (Portfolio / Media Page)
+├── contact.html      (Contact / Form Page)
+├── css/
+│    └── style.css    (External CSS file)
+├── images/
+│    └── your_images_here.jpg
+├── videos/
+│    └── sample_video.mp4
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Highlighted box */
+.highlight {
+    background-color: #e7f3fe;
+    border-left: 5px solid #2196F3;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
