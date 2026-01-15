@@ -4,6 +4,7 @@ project:
   
 website:
   title: "temp_website"
+<<<<<<< HEAD
   
 navbar:
   left:
@@ -13,6 +14,13 @@ navbar:
       text: Project
     - href: data-visualization.qmd
       text: Data Visualization
+=======
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+>>>>>>> 973ca5522affe038dce6a7f5f51669cca569e229
 
 format:
   html:

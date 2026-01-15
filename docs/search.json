@@ -2,7 +2,11 @@
   {
     "objectID": "about.html",
     "href": "about.html",
+<<<<<<< HEAD
     "title": "temp_website",
+=======
+    "title": "About",
+>>>>>>> 973ca5522affe038dce6a7f5f51669cca569e229
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   }

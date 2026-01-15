@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 
+=======
+title: "About"
+>>>>>>> 973ca5522affe038dce6a7f5f51669cca569e229
 ---
 
 About this site
